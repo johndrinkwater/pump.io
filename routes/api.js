@@ -810,7 +810,7 @@ var createUser = function(req, res, next) {
         defaultLists = function(user, callback) {
             Step(
                 function(err, str) {
-                    var lists = ["Friends", "Family", "Acquaintances", "Coworkers"],
+                    var lists = req.app.config.userDefaults.lists;
                         group = this.group();
 
                     if (err) throw err;
