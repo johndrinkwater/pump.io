@@ -1,7 +1,7 @@
 <div class="media" id="profile-block" data-profile-id="<%- profile.id %>">
   <span class="pull-left">
     <% if (profile.image && profile.image.url) { %>
-    <img src="<%- profile.image.url %>" width="128" height="128" class="img-rounded media-object" />
+    <img src="<%= profile.image.url %>" width="128" height="128" class="img-rounded media-object" />
     <% } else { %>
     <img src="/images/default.png" width="128" height="128" class="img-rounded media-object" />
     <% } %>
